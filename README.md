@@ -22,29 +22,6 @@ ORM: Hibernate (Spring Data JPA)
 Build Tool: Maven
 Tools: IntelliJ IDEA / VS Code, Postman, cURL
 
-📂 Project Structure
-
-smart-device-backend
-`│── src/main/java/com/example/smartdevice
-│   │── controller
-│   │   └── DeviceController.java
-│   │── service
-│   │   └── DeviceService.java
-│   │── repository
-│   │   └── DeviceRepository.java
-│   │── model
-│   │       ├── SmartDevice.java
-│   │       ├── DeviceStatus.java (ENUM)
-│   │       └── DeviceType.java (ENUM)
-│   └── SmartDeviceBackendApplication.java
-│
-│── src/main/resources
-│   └── application.properties
-│
-│── pom.xml
-│── README.md`
-
-
 🗄️ Database Setup (MySQL)
 Create database
 `CREATE DATABASE smart_devices_db;`
