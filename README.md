@@ -57,8 +57,8 @@ java -jar target/smart-device-backend.jar
 
 
 📡 API Endpoints
-✅ 1. Add Device
 
+✅ 1. Add Device
 POST /api/devices
 Body
 `{
