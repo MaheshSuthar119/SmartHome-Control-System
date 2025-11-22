@@ -25,7 +25,7 @@ Tools: IntelliJ IDEA / VS Code, Postman, cURL
 📂 Project Structure
 
 smart-device-backend
-│── src/main/java/com/example/smartdevice
+`│── src/main/java/com/example/smartdevice
 │   │── controller
 │   │   └── DeviceController.java
 │   │── service
@@ -42,25 +42,25 @@ smart-device-backend
 │   └── application.properties
 │
 │── pom.xml
-│── README.md
+│── README.md`
 
 
 🗄️ Database Setup (MySQL)
 Create database
-CREATE DATABASE smart_devices_db;
+`CREATE DATABASE smart_devices_db;`
 
 Table is auto-created by Spring Boot
 Spring Boot + JPA will automatically create the table:
 
 smart_devices
-(
+`(
   id INT PRIMARY KEY AUTO_INCREMENT,
   device_name VARCHAR(255),
   device_type VARCHAR(50),
   status VARCHAR(20),
   battery_level INT,
   last_updated TIMESTAMP
-);
+);`
 
 Configure application.properties
 
@@ -84,12 +84,12 @@ java -jar target/smart-device-backend.jar
 
 POST /api/devices
 Body
-{
+`{
   "deviceName": "Room Light",
   "deviceType": "LIGHT",
   "status": "ON",
   "batteryLevel": 80
-}
+}`
 
 ✅ 2. Get All Devices
 GET /api/devices
@@ -101,14 +101,14 @@ PUT /api/devices/{id}/status?newStatus=OFF
 DELETE /api/devices/{id}
 
 📊 Sample Response
-{
+`{
   "id": 1,
   "deviceName": "Room Light",
   "deviceType": "LIGHT",
   "status": "ON",
   "batteryLevel": 80,
   "lastUpdated": "2025-11-22T17:45:30"
-}
+}`
 
 
 🧠 Purpose of the Project
